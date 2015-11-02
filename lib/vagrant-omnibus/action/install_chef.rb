@@ -117,7 +117,7 @@ module VagrantPlugins
         end
 
         def windows_guest?
-          @machine.config.vm.guest.eql?(:windows)
+          @machine.guest.name.eql?(:windows)
         end
 
         def provision_enabled?(env)
